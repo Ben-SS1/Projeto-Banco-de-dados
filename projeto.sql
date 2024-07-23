@@ -27,15 +27,15 @@ CREATE TABLE IF NOT EXISTS pessoa (
   'email' VARCHAR(50)
 );
 CREATE TABLE IF NOT EXISTS funcionario (
-  'cpf-funcionario' VARCHAR(14) FOREIGN KEY REFERENCES pessoa('cpf'),
+  'cpf-funcionario' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES pessoa('cpf'),
   'salario' INT,
   'd-contratacao' DATE
 );
 CREATE TABLE IF NOT EXISTS professor (
-  'cpf-professor' VARCHAR(14) FOREIGN KEY REFERENCES funcionario('cpf-funcionario')
+  'cpf-professor' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES funcionario('cpf-funcionario')
 );
 CREATE TABLE IF NOT EXISTS prof_sub (
-  'cpf-professor' VARCHAR(14) FOREIGN KEY REFERENCES professor('cpf-professor')
+  'cpf-professor' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES professor('cpf-professor')
   'd-termino' DATE,
 );
 
@@ -43,38 +43,38 @@ CREATE TABLE IF NOT EXISTS prof_sub (
 CREATE TABLE IF NOT EXISTS curso (
   'id-curso' VARCHAR(10) PRIMARY KEY,
   'nome' VARCHAR(50),
-  'cpf-coordenador' VARCHAR(14) FOREIGN KEY REFERENCES funcionario('cpf-funcionario'),
+  'cpf-coordenador' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES funcionario('cpf-funcionario'),
   'ch-curso' VARCHAR(10),
   'turno' VARCHAR(10),
-  'cod-centro' VARCHAR(10) FOREIGN KEY REFERENCES centro('cod-centro'),
-  'cod-dept' VARCHAR(20) FOREIGN KEY REFERENCES departamento('cod-dept')
+  'cod-centro' VARCHAR(10) PRIMARY KEY FOREIGN KEY REFERENCES centro('cod-centro'),
+  'cod-dept' VARCHAR(20) PRIMARY KEY FOREIGN KEY REFERENCES departamento('cod-dept')
 );
 CREATE TABLE IF NOT EXISTS disciplina (
   'nome' VARCHAR(255),
   'cod-disc' VARCHAR(10),
   'c-horaria' VARCHAR(10),
-  'cod-centro' VARCHAR(10) FOREIGN KEY REFERENCES centro('cod-centro'),
-  'cod-dept' VARCHAR(20) FOREIGN KEY REFERENCES departamento('cod-dept')
+  'cod-centro' VARCHAR(10) PRIMARY KEY FOREIGN KEY REFERENCES centro('cod-centro'),
+  'cod-dept' VARCHAR(20) PRIMARY KEY FOREIGN KEY REFERENCES departamento('cod-dept')
 );
 CREATE TABLE IF NOT EXISTS turma (
   'id-turma' VARCHAR(20), PRIMARY KEY,
   'horario' VARCHAR(10),
   'periodo' VARCHAR(10),
-  'cod-disciplina' VARCHAR(10) FOREIGN KEY REFERENCES disciplina('cod-disc'),
-  'cpf-professor' VARCHAR(14) FOREIGN KEY REFERENCES professor('cpf-professor')
+  'cod-disciplina' VARCHAR(10) PRIMARY KEY FOREIGN KEY REFERENCES disciplina('cod-disc'),
+  'cpf-professor' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES professor('cpf-professor')
 );
 
 
 CREATE TABLE IF NOT EXISTS estudante (
-  'cpf-estudante' VARCHAR(14) FOREIGN KEY REFERENCES pessoa('cpf'),
+  'cpf-estudante' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES pessoa('cpf'),
 );
 CREATE TABLE IF NOT EXISTS est_grad (
-  'cpf-estudante' VARCHAR(14) FOREIGN KEY REFERENCES estudante('cpf-estudante'),
-  'id-curso' VARCHAR(14) FOREIGN KEY REFERENCES curso('id-curso')
+  'cpf-estudante' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES estudante('cpf-estudante'),
+  'id-curso' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES curso('id-curso')
   'per-entrada' VARCHAR(15)
 );
 CREATE TABLE IF NOT EXISTS est_pos (
-  'cpf-estudante' VARCHAR(14) FOREIGN KEY REFERENCES estudante('cpf-estudante'),
+  'cpf-estudante' VARCHAR(14) PRIMARY KEY FOREIGN KEY REFERENCES estudante('cpf-estudante'),
   'cpf-orientador' VARCHAR(14) PRIMARY KEY,
 );
 
