@@ -101,10 +101,10 @@ INSERT INTO departamento_nome (cod_centro, cod_dept, cpf_chefe) VALUES
 --- Povoamento da Tabela de Cursos
 
 INSERT INTO curso (id_curso, nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES 
-    (1234, "Psicologia", "", 3600, "Integral", "CH", "DP"),
-    (1661, "Gastronomia", "", 3600, "Manhã", "CCEN", "DQ"),
-    (2424, "Literatura", "", 4000, "Tarde", "CAL", "DL"),
-    (1010, "Músicas", "", 3600, "Tarde", "CAL", "DM");
+    (55, "Psicologia", "", 3600, "Integral", "CH", "DP"),
+    (50, "Gastronomia", "", 3600, "Manhã", "CCEN", "DQ"),
+    (24, "Literatura", "", 4000, "Tarde", "CAL", "DL"),
+    (30, "Música", "", 3600, "Tarde", "CAL", "DM");
 
 --- Povoamento da Tabela de Disciplinas 
 
@@ -115,14 +115,15 @@ INSERT INTO disciplina (nome, cod_disc, c_horaria, cod_centro, cod_dept) VALUES
     ("Cozinha Nordestina", "DQ09", 120, "CCEN", "DQ"),
     ("Cozinha Vegana", "DQ10", 120, "CCEN", "DQ"),
     ("Poesia, Ritmo e Rima", "DL03", 90, "CAL", "DL"),
-    ("Letras", "DM43", 60, "CAL", "DM");
+    ("Letras", "DM43", 60, "CAL", "DM"),
+    ("Canto I", "DM80", 60, "CAL", "DM");
 
 --- Povoamento da Tabela de Disciplinas Obrigatórias
 
 INSERT INTO disciplina_obrigatoria (cod_disciplina, id_curso, cod_dept) VALUES 
-    ("DQ09", 1661, "DQ"),
-    ("DQ10", 1661, "DQ"),
-    ("DL43", 2424, "DL");
+    ("DQ09", 50, "DQ"),
+    ("DQ10", 50, "DQ"),
+    ("DL43", 24, "DL");
 
 --- Povoamento da Tabela de Equivalências
 
@@ -132,29 +133,42 @@ INSERT INTO equivalencia (cod_equivalencia, cod_equivalida) VALUES
 --- Povoamento da Tabela de Turmas
 
 INSERT INTO turma (id_turma, horario, periodo, cod_disciplina, cpf_professor) VALUES 
-    (55557777, "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "242.424.242-42"),
-    (24242424, "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "242.424.242-42"),
-    (11111111, "Segunda 08h-12h", "5", "DQ10", "123.456.789-00");
+    ("55557777", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "242.424.242-42"),
+    ("24242424", "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "242.424.242-42"),
+    ("11111111", "Segunda 08h-12h", "5", "DQ10", "123.456.789-00"),
+    ("22222222", "Segunda 13h-15h/Quinta 15h-17h", "2", "DQ80", "012.345.678-99");
 
 --- Povoamento da Tabela de Matrículas
 
-INSERT INTO matricula_turma () VALUES 
-    ();
+INSERT INTO matricula_turma (cpf_estudante, id_turma) VALUES 
+    ("123.456.789-12", "11111111"),
+    ("428.555.156-77", "22222222"),
+    ("444.444.444-44", "55557777");
+
 
 --- Povoamento da Tabela de Estudantes
 
-INSERT INTO estudante () VALUES 
-    ();
+INSERT INTO estudante (cpf) VALUES 
+    ("455.625.420-10"),
+    ("111.111.111-11"),
+    ("999.999.999-99"),
+    ("123.456.789-12"),
+    ("428.555.156-77"), 
+    ("444.444.444-44");
 
 --- Povoamento da Tabela de Estudantes da Graduação
 
-INSERT INTO est_grad () VALUES 
-    ();
+INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES 
+    ("123.456.789-12", 50, "2020.1"),
+    ("428.555.156-77", 30, "2023.2"), 
+    ("444.444.444-44", 24, "2023.2");
 
 --- Povoamento da Tabela de Estudantes da Pós-Graduação
 
 INSERT INTO est_pos () VALUES 
-    ();
+    ("455.625.420-10"),
+    ("111.111.111-11"),
+    ("999.999.999-99");
 
 --- Povoamento da Tabela de Extensões
 
