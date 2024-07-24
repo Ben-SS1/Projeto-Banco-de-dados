@@ -71,13 +71,32 @@ INSERT INTO prof_sub (cpf, d_termino) VALUES
 
 --- Povoamento da Tabela de Centros
 
-INSERT INTO centro () VALUES 
-    ();
+INSERT INTO centro (cod_centro, cpf_diretor) VALUES 
+    ("CH", "123.456.789-12"),
+    ("CCEN", "123.456.789-00"), 
+    ("CAL", "012.345.678-99");
+
+--- Povoamento da Tabela de Nomes de Centro
+
+INSERT INTO centro _nome (nome, cod_centro) VALUES 
+    ("Centro de Humanidades", "CH"),
+    ("Centro de Ciência Exatas e da Natureza", "CCEN"), 
+    ("Centro de Artes e Linguagem", "CAL");
+
 
 --- Povoamento da Tabela de Departamentos
 
-INSERT INTO departamento () VALUES 
-    ();
+INSERT INTO departamento (cod_centro, cod_dept, cpf_chefe) VALUES 
+    ("CH", "DP", ""),
+    ("CCEN", "DQ", ""),
+    ("CAL", "DM", "");
+
+--- Povoamento da Tabela de Departamentos 
+
+INSERT INTO departamento_nome (cod_centro, cod_dept, cpf_chefe) VALUES 
+    ("Departamento de Psicologia", "CH", "DP"),
+    ("Departamento de Química", "CCEN", "DQ"),
+    ("Departamento de Letras", "CAL", "DL");
 
 --- Povoamento da Tabela de Cursos
 
