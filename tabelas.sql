@@ -1,4 +1,7 @@
+CREATE USER 'foo@test' IDENTIFIED BY 'MAMAECAGUEI';
+CREATE ROLE ''
 CREATE DATABASE IF NOT EXISTS universidade;
+
 
 USE universidade;
 
