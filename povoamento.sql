@@ -6,7 +6,7 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, rua, numero, bairro, cidad
     ('012.345.678-99', 'Supla', 'Masculino', '1989-04-09', 'lucas.almeida@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
     ("123.456.789-12", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
     ("455.625.420-10", "Alberto Alcantara", "Masculino", "2004-11-31", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", "Campinas", "SP"),
-    ("111.111.111-11", "Tonari no Totoro", "Neutrois", "1988-04-16", "meu.amigo.totoro@studio.ghibli.com", "Rua  Koganei", "00", "Toquio", "Ja"),
+    ("111.111.111-11", "Tonari no Totoro", "Neutrois", "1988-04-16", "tonari.no.totoro@studio.ghibli.com", "Rua  Koganei", "00", "Toquio", "Ja"),
     ("999.999.999-99", 
     "寿限無 寿限無 五劫の擦り切れ 海砂利水魚の 水行末 雲来末 風来末 食う寝る処に住む処 やぶら柑子のぶら柑子 パイポパイポ パイポのシューリンガン 
     シューリンガンのグーリンダイ グーリンダイのポンポコピーのポンポコナーの 長久命の長助", 
@@ -101,31 +101,40 @@ INSERT INTO departamento_nome (cod_centro, cod_dept, cpf_chefe) VALUES
 --- Povoamento da Tabela de Cursos
 
 INSERT INTO curso (id_curso, nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES 
-    ("1234", "Psicologia", "", 3600, "Integral", "CH", "DP"),
-    ("1661", "Gastronomia", "", 3600, "Manhã", "CCEN", "DQ"),
-    ("2424", "Literatura", "", 4000, "Tarde", "CAL", "DL");
+    (1234, "Psicologia", "", 3600, "Integral", "CH", "DP"),
+    (1661, "Gastronomia", "", 3600, "Manhã", "CCEN", "DQ"),
+    (2424, "Literatura", "", 4000, "Tarde", "CAL", "DL"),
+    (1010, "Músicas", "", 3600, "Tarde", "CAL", "DM");
 
 --- Povoamento da Tabela de Disciplinas 
 
 INSERT INTO disciplina (nome, cod_disc, c_horaria, cod_centro, cod_dept) VALUES
     ("Literatura Queer", "DL24", 60, "CAL", "DL"),
-    ("Representatividade", "DL43", 90, "CAL", "DL").
-    ("Cozinha Chinesa", "DQ13", 90, "CCEN", "DQ");
+    ("Representatividade", "DL43", 90, "CAL", "DL"),
+    ("Cozinha Chinesa", "DQ13", 60, "CCEN", "DQ"),
+    ("Cozinha Nordestina", "DQ09", 120, "CCEN", "DQ"),
+    ("Cozinha Vegana", "DQ10", 120, "CCEN", "DQ"),
+    ("Poesia, Ritmo e Rima", "DL03", 90, "CAL", "DL"),
+    ("Letras", "DM43", 60, "CAL", "DM");
 
 --- Povoamento da Tabela de Disciplinas Obrigatórias
 
-INSERT INTO disciplina_obrigatoria () VALUES 
-    ();
+INSERT INTO disciplina_obrigatoria (cod_disciplina, id_curso, cod_dept) VALUES 
+    ("DQ09", 1661, "DQ"),
+    ("DQ10", 1661, "DQ"),
+    ("DL43", 2424, "DL");
 
 --- Povoamento da Tabela de Equivalências
 
-INSERT INTO equivalencia () VALUES 
-    ();
+INSERT INTO equivalencia (cod_equivalencia, cod_equivalida) VALUES 
+    ("DM43", "DL03");
 
 --- Povoamento da Tabela de Turmas
 
-INSERT INTO turma () VALUES 
-    ();
+INSERT INTO turma (id_turma, horario, periodo, cod_disciplina, cpf_professor) VALUES 
+    (55557777, "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "242.424.242-42"),
+    (24242424, "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "242.424.242-42"),
+    (11111111, "Segunda 08h-12h", "5", "DQ10", "123.456.789-00");
 
 --- Povoamento da Tabela de Matrículas
 
