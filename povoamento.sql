@@ -3,7 +3,7 @@
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, rua, numero, bairro, cidade, UF) VALUES
     ('123.456.789-00', 'Ana Maria Braga', 'Feminino', '1949-04-01', 'braga.namaria@gmail.com', 'Rua das Flores', '123', 'Centro', 'São Paulo', 'SP'),
-    ('012.345.678-99', 'Lucas Almeida', 'Masculino', '1989-04-09', 'lucas.almeida@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
+    ('012.345.678-99', 'Supla', 'Masculino', '1989-04-09', 'lucas.almeida@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
     ("123.456.789-12", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
     ("455.625.420-10", "Alberto Alcantara", "Masculino", "2004-11-31", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", "Campinas", "SP"),
     ("111.111.111-11", "Tonari no Totoro", "Neutrois", "1988-04-16", "meu.amigo.totoro@studio.ghibli.com", "Rua  Koganei", "00", "Toquio", "Ja"),
@@ -20,11 +20,12 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, cidade, UF) VALUES
     ("444.444.444-44", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT");
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES 
-    ("123.456.789-12", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", FL),
+    ("987.654.321-12", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", FL),
     ("101.928.345-56", "Joana Joaquina", "Feminino", "1999-01-01", "jojo@gmail.com", "FL"),
     ("242.424.242-42", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "Chatham", "UK");
 
 --- Povoamento da Tabela de Telefones
+--- 12 registros na Tabela de Telefones
 
 INSERT INTO telefone (cpf_pessoa, telefone) VALUES 
     ("123.456.789-00", "(11) 98765-4321"),
@@ -42,22 +43,31 @@ INSERT INTO telefone (cpf_pessoa, telefone) VALUES
 
 
 --- Povoamento da Tabela de Funcionarios
---- 2 registros na Tabela de Funcionarios
+--- 6 registros na Tabela de Funcionarios
 
 INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
-    ("12345678912", 30000,"2009-02-01");
-INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
-    ("73554931257", 2000,"2024-02-01");
-
+    ("123.456.789-12", 30000,"2009-02-01"),
+    ("735.549.312-57", 2000,"2024-02-01"), --- quem é esse?
+    ("123.456.789-00", 20000, "1990-06-01"), 
+    ("242.424.242-42", 10000, "2022-02-01"),
+    ("012.345.678-99", 30000, "2000-09-01"),
+    ("987.654.321-12", 8000, "2018-03-01");
+;
 --- Povoamento da Tabela de Professores
+--- 3 registros na Tabela de Funcionarios
 
-INSERT INTO professor () VALUES 
-    ();
+INSERT INTO professor (cpf) VALUES 
+    ("123.456.789-12", 30000,"2009-02-01"),
+    ("123.456.789-00", 20000, "1990-06-01"), 
+    ("012.345.678-99", 30000, "2000-09-01");
 
 --- Povoamento da Tabela de Professores Substitutos
+--- 3 registros na Tabela de Funcionarios
 
-INSERT INTO prof_sub () VALUES 
-    ();
+INSERT INTO prof_sub (cpf, d_termino) VALUES 
+    ("735.549.312-57", "2030-05-31"),
+    ("242.424.242-42", "2030-03-31"),
+    ("987.654.321-12", "2026-12-20");
 
 --- Povoamento da Tabela de Centros
 
