@@ -100,13 +100,17 @@ INSERT INTO departamento_nome (cod_centro, cod_dept, cpf_chefe) VALUES
 
 --- Povoamento da Tabela de Cursos
 
-INSERT INTO curso () VALUES 
-    ();
+INSERT INTO curso (id_curso, nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES 
+    ("1234", "Psicologia", "", 3600, "Integral", "CH", "DP"),
+    ("1661", "Gastronomia", "", 3600, "Manhã", "CCEN", "DQ"),
+    ("2424", "Literatura", "", 4000, "Tarde", "CAL", "DL");
 
 --- Povoamento da Tabela de Disciplinas 
 
 INSERT INTO disciplina (nome, cod_disc, c_horaria, cod_centro, cod_dept) VALUES
-    ()
+    ("Literatura Queer", "DL24", 60, "CAL", "DL"),
+    ("Representatividade", "DL43", 90, "CAL", "DL").
+    ("Cozinha Chinesa", "DQ13", 90, "CCEN", "DQ");
 
 --- Povoamento da Tabela de Disciplinas Obrigatórias
 
