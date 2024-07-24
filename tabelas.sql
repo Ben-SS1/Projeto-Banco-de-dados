@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS est_pos (
 
 CREATE TABLE IF NOT EXISTS turma (
   id_turma VARCHAR(20),
-  horario VARCHAR(10),
+  horario VARCHAR(100),
   periodo VARCHAR(10),
   cod_disc VARCHAR(10),
   cpf_professor VARCHAR(14),
@@ -144,7 +144,7 @@ CREATE TABLE IF NOT EXISTS matricula_turma (
   cpf_estudante VARCHAR(14),
   id_turma VARCHAR(20),
   cod_disc VARCHAR(10),
-  PRIMARY KEY (cpf_estudante, id_turma),
+  PRIMARY KEY (cpf_estudante, id_turma, cod_disc),
   FOREIGN KEY (cpf_estudante) REFERENCES est_grad(cpf),
   FOREIGN KEY (id_turma,cod_disc) REFERENCES turma(id_turma,cod_disc)
 );
