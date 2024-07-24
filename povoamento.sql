@@ -105,31 +105,34 @@ INSERT INTO departamento (cod_centro, cod_dept, cpf_chefe) VALUES
 INSERT INTO departamento_nome (nome, cod_centro, cod_dept) VALUES 
     ("Departamento de Psicologia", "CH", "DP"),
     ("Departamento de Química", "CCEN", "DQ"),
-    ("Departamento de Letras", "CAL", "DL");
+    ("Departamento de Letras", "CAL", "DL"),
+    ("Departamento de Filosofia", "CH", "DF");
 
 -- Povoamento da Tabela de Cursos
 
-INSERT INTO curso (id_curso, nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES 
-    ("1234", "Psicologia", "123.456.789-12", 3600, "Integral", "CH", "DP"),
-    ("1661", "Gastronomia", "123.456.789-12", 3600, "Manhã", "CCEN", "DQ"),
-    ("2424", "Literatura", "123.456.789-12", 4000, "Tarde", "CAL", "DL");
+INSERT INTO curso (nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES -- id_curso é automaticamente preenchido
+    ("Psicologia", "123.456.789-12", 3600, "Integral", "CH", "DP"),
+    ("Gastronomia", "123.456.789-12", 3600, "Manhã", "CCEN", "DQ"),
+    ("Literatura", "123.456.789-12", 4000, "Tarde", "CAL", "DL"),
+    ("Filosofia", "123.456.789-12", 3600, "Manhã", "CH", "DF");
 
 -- Povoamento da Tabela de Disciplinas 
 
 INSERT INTO disciplina (nome, cod_disc, c_horaria, cod_centro, cod_dept) VALUES
     ("Literatura Queer", "DL24", 60, "CAL", "DL"),
     ("Representatividade", "DL43", 90, "CAL", "DL"),
-    ("Cozinha Chinesa", "DQ13", 90, "CCEN", "DQ");
+    ("Cozinha Chinesa", "DQ13", 90, "CCEN", "DQ"),
+    ("Literatura Queer", "DF01", 75, "CH", "DF");
 
 -- Povoamento da Tabela de Disciplinas Obrigatórias
 
-INSERT INTO disciplina_obrigatoria () VALUES 
-    ();
+INSERT INTO disciplina_obrigatoria (cod_disc, id_curso) VALUES 
+    ("DL24",3);
 
 -- Povoamento da Tabela de Equivalências
 
-INSERT INTO equivalencia () VALUES 
-    ();
+INSERT INTO equivalencia (cod_equivalencia, cod_equivalida) VALUES 
+    ("DL24", "DF01");
 
 -- Povoamento da Tabela de Turmas
 

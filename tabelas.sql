@@ -96,11 +96,8 @@ CREATE TABLE IF NOT EXISTS disciplina (
 CREATE TABLE IF NOT EXISTS disciplina_obrigatoria (
   cod_disc VARCHAR(10),
   id_curso INT,
-  cod_centro VARCHAR(10),
-  cod_dept VARCHAR(10),
-  PRIMARY KEY (cod_disc, id_curso, cod_centro, cod_dept),
+  PRIMARY KEY (cod_disc, id_curso),
   FOREIGN KEY (cod_disc) REFERENCES disciplina(cod_disc),
-  FOREIGN KEY (cod_centro,cod_dept) REFERENCES departamento(cod_centro, cod_dept),
   FOREIGN KEY (id_curso) REFERENCES curso(id_curso)
 );
 CREATE TABLE IF NOT EXISTS equivalencia (
