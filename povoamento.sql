@@ -2,50 +2,50 @@
 -- 18 registros na Tabela Pessoas
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, rua, numero, bairro, cidade, UF) VALUES
-    ("157.251.257-18", "Ana Maria Braga", "Feminino", "1949-04-01", "braga.namaria@gmail.com", "Rua das Flores", "123", "Centro", "São Paulo", "SP"),
-    ("194.301.755-72", "Supla", "Masculino", "1966-04-02", "supla.brasil@gmail.com", "Avenida do Contorno", "707", "Savassi", "Belo Horizonte", "MG"),
-    ("123.456.789-00", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
-    ("468.692.504-56", "Alberto Alcantara", "Masculino", "2004-11-20", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", NULL, "Campinas", "SP"),
-    ("074.464.385-68", "Totoro", "Neutrois", "1988-04-16", "tonari.no.totoro@studio.ghibli.com", "Rua  Koganei", "00", NULL, "Toquio", "JP"),
+    ("157.251.257-18", "Ana Maria Braga", "Feminino", "1949-04-01", "braga.namaria@gmail.com", "Rua das Flores", "123", "Centro", "São Paulo", "SP"), -- professora
+    ("194.301.755-72", "Supla", "Masculino", "1966-04-02", "supla.brasil@gmail.com", "Avenida do Contorno", "707", "Savassi", "Belo Horizonte", "MG"), -- professor
+    ("123.456.789-00", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"), -- pŕofessor
+    ("468.692.504-56", "Alberto Alcantara", "Masculino", "2004-11-20", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", NULL, "Campinas", "SP"), -- estudante pos
+    ("074.464.385-68", "Totoro", "Neutrois", "1988-04-16", "tonari.no.totoro@studio.ghibli.com", "Rua  Koganei", "00", NULL, "Toquio", "JP"), -- estudante pós
     ("999.999.999-99", 
     '寿限無 寿限無 五劫の擦り切れ 海砂利水魚の 水行末 雲来末 風来末 食う寝る処に住む処 やぶら柑子のぶら柑子 パイポパイポ パイポのシューリンガン シューリンガンのグーリンダイ グーリンダイのポンポコピーのポンポコナーの 長久命の長助', 
-    "Agênero", "2002-03-11", "ponpokopinoponpokona@yahoo.com", "Rua Chōkyūmei-no Chōsuke", "220", "Afogados", "Recife", "PE");
+    "Agênero", "2002-03-11", "ponpokopinoponpokona@yahoo.com", "Rua Chōkyūmei-no Chōsuke", "220", "Afogados", "Recife", "PE"); -- estudante pós
 
 INSERT INTO pessoa (cpf, nome, genero, email) VALUES
-    ("988.500.358-45", "Cuca Beludo", "Feminino", "cuca.cabeludo@gmail.com"),
-    ("409.524.767-38", "Will Solace", "Masculino", "son-of-apollo@halfblood.com"),
-    ("604.629.474-67", "Victor Frankenstein", "Masculino", "doctor.frankenstein@gmail.com"),
-    ("000.000.006-01", "Lester Papadopoulos", "Masculino", "god-of-sun@olympus.com"),
-    ("048.826.172-42", "Claudio Possani", "Masculino", "claudio.possani@gmail.com"),
-    ("416.236.407-92", "Percy Jackson", "Demiboy", "son-of-poseidon@halfblood.com"),
-    ("831.550.514-93", "Hercule Poirot", "Masculino", "hercule.poirot@gmail.com"),
-    ("200.240.403-80", "Kujo Jotaro", "Bad Boy", "star.platinum@spw.org");
+    ("988.500.358-45", "Cuca Beludo", "Não-binário", "cuca.cabeludo@gmail.com"), -- estudante gradução
+    ("409.524.767-38", "Will Solace", "Masculino", "son-of-apollo@halfblood.com"), -- estudante graduação
+    ("604.629.474-67", "Victor Frankenstein", "Masculino", "doctor.frankenstein@gmail.com"), -- professor
+    ("000.000.006-01", "Lester Papadopoulos", "Masculino", "god-of-sun@olympus.com"), -- professor
+    ("048.826.172-42", "Claudio Possani", "Masculino", "claudio.possani@gmail.com"), -- professor
+    ("416.236.407-92", "Percy Jackson", "Demiboy", "son-of-poseidon@halfblood.com"), -- estudante graduação
+    ("831.550.514-93", "Hercule Poirot", "Masculino", "hercule.poirot@gmail.com"), -- professor
+    ("200.240.403-80", "Kujo Jotaro", "Bad Boy", "star.platinum@spw.org"); -- professor
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, cidade, UF) VALUES
-    ("868.818.605-79", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT");
+    ("868.818.605-79", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT"); -- estudante graduação
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES 
-    ("537.382.259-00", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"),
-    ("622.229.395-69", "Joana Joaquina", "Feminino", "2019-01-01", "jojobr@spw.org", "RJ"),
-    ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"),
-    ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PE"),
-    ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PE"),
-    ("276.755.822-92", "Hugo Agaugeó", "Uraniano", "2003-10-16", "hugohugohugo@gmail.com", "PE"),
-    ("942.703.890-01", "Cassandra Clare", "Feminino", "1973-09-27", "cassandra.clare@shadowhunters.com", "RJ"),
-    ("460.417.549-78", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"),
-    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com"),    
-    ("863.501.190-29", 'Albert Einstein', 'Masculino', '1879-03-14', 'einstein@relativity.com', 'SP'),
-    ("087.623.072-90", 'Marie Curie', "Feminino", '1867-11-07', 'marie@radium.com', 'MG'),
-    ("924.728.227-66", 'Isaac Newton', "Genderqueer", '1643-01-04', 'newton@gravity.com', 'SP'),
-    ("474.013.604-03", 'Nikola Tesla', "Masculino", '1856-07-10', 'tesla@acdc.com', 'RS'),
-    ("880.483.410-26", 'Cleópatra', "Feminino", '0069-01-01', 'cleopatra@egypt.com', 'BA'),
-    ("361.060.078-02", "Pikachu", "Pikachu", "1996-04-12", "pikachu@pokemon.com", "SP"),
-    ("498.779.581-71", 'Girafales', "Masculino", '1948-12-31', 'professor.girafales@vila.com', 'BA'),
-    ("893.473.331-40", 'Chaves', "Masculino", '1950-01-01', 'chaves@vila.com', 'SP'),
-    ("222.386.412-03", 'Lara Croft', "Feminino", '1968-02-14', 'lara@tombraider.com', 'BA'),
-    ("070.486.680-32", 'Frodo Baggins', "Masculino", '1991-01-20', 'frodo@shire.com', 'SP'),
-    ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'),
-    ("535.074.559-00", "John Snow", "Masculino", "1986-12-03", "john.snow@winterfell.com", "BA"),
+    ("537.382.259-00", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"), -- professor substituto
+    ("622.229.395-69", "Joana Joaquina", "Feminino", "2003-01-01", "jojobr@spw.org", "RJ"), -- estudante graduação
+    ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"), -- professora substituta
+    ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PE"), -- professora substituta
+    ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PE"), -- estudante pos
+    ("276.755.822-92", "Hugo Agaugeó", "Uraniano", "2003-10-16", "hugohugohugo@gmail.com", "PE"), -- estudante graduação
+    ("942.703.890-01", "Cassandra Clare", "Feminino", "1973-09-27", "cassandra.clare@shadowhunters.com", "RJ"), -- professora 
+    ("460.417.549-78", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"), -- estudante graduação
+    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com"), -- professor
+    ("863.501.190-29", 'Albert Einstein', 'Masculino', '1879-03-14', 'einstein@relativity.com', 'SP'), -- professor
+    ("087.623.072-90", 'Marie Curie', "Feminino", '1867-11-07', 'marie@radium.com', 'MG'), -- professor 
+    ("924.728.227-66", 'Isaac Newton', "Genderqueer", '1643-01-04', 'newton@gravity.com', 'SP'), -- professor
+    ("474.013.604-03", 'Nikola Tesla', "Masculino", '1856-07-10', 'tesla@acdc.com', 'RS'), -- professor 
+    ("880.483.410-26", 'Cleópatra', "Feminino", '0069-01-01', 'cleopatra@egypt.com', 'BA'), -- estudante pos
+    ("361.060.078-02", "Pikachu", "Pikachu", "1996-04-12", "pikachu@pokemon.com", "SP"), -- estudante graduação
+    ("498.779.581-71", 'Girafales', "Masculino", '1948-12-31', 'professor.girafales@vila.com', 'BA'), -- professor
+    ("893.473.331-40", 'Chaves', "Masculino", '1950-01-01', 'chaves@vila.com', 'SP'), -- estudante graduação
+    ("222.386.412-03", 'LaraTeX Croft', "Feminino", '1968-02-14', 'lara@tombraider.com', 'BA'), -- estudante graduação
+    ("070.486.680-32", 'Frodo Baggins', "Masculino", '1991-01-20', 'frodo@shire.com', 'SP'), -- estudante graduação
+    ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'), -- estudante graduação
+    ("535.074.559-00", "Jon Snow", "Masculino", "1986-12-03", "jon.snow@winterfell.com", "BA"); -- estudante graduação
 
 -- Povoamento da Tabela de Telefones
 -- 12 registros na Tabela de Telefones
@@ -223,11 +223,11 @@ INSERT INTO turma (id_turma, horario, periodo, cod_disc, cpf_professor) VALUES
     ("A2", "Segunda 08h-12h", "2024.1", "DQ10", "157.251.257-18"),
     ("A2", "Segunda 13h-15h/Quarta 15h-17h", "2024.1", "DL43", "565.113.417-47"),
     ("A2", "Segunda 15h-17h/Quarta 13h-15h", "2024.1", "DL24", "565.113.417-47"),
-    ("A1", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
-    ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2", "DM80", "194.301.755-72"),
-    ("A9", "Segunda 13h-15h/Sexta 13h-15h", "3", "DM77", "000.000.006-01"),
-    ("A0", "Segunda 08h-10h/Sexta 10h-12h", "1", "DM72", "048.826.172-42"),
-    ("A0", "Segunda 10h-12h/Sexta 08h-10h", "2", "DM75", "048.826.172-42");
+    ("A1", "Segunda 08h-12h", "2023.2", "DQ10", "157.251.257-18"),
+    ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2023.2", "DM80", "194.301.755-72"),
+    ("A9", "Segunda 13h-15h/Sexta 13h-15h", "2023.2", "DM77", "000.000.006-01"),
+    ("A0", "Segunda 08h-10h/Sexta 10h-12h", "2023.2", "DM72", "048.826.172-42"),
+    ("A0", "Segunda 10h-12h/Sexta 08h-10h", "2023.2", "DM75", "048.826.172-42");
 
 -- Povoamento da Tabela de Estudantes
 
@@ -245,7 +245,9 @@ INSERT INTO estudante (cpf) VALUES
     ("893.473.331-40"),
     ("222.386.412-03"),
     ("070.486.680-32"),
-    ("880.483.410-26");
+    ("880.483.410-26"),
+    ("988.500.358-45"),
+    ("535.074.559-00");
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
@@ -256,8 +258,11 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
     ("460.417.549-78", 1, "2021.1"),
     ("276.755.822-92", 1, "2021.1"),
     ("893.473.331-40", 7, "2018.1"),
-    ("222.386.412-03", 2, "2020.2"),
-    ("070.486.680-32", 2, "2014.1");
+    ("222.386.412-03", 2, "2017.1"),
+    ("070.486.680-32", 2, "2014.1"),
+    ("535.074.559-00", 5, "2021.1"),
+    ("988.500.358-45", 4, "2018.2");
+
 
 -- Povoamento da Tabela de Matrículas
 
@@ -273,7 +278,7 @@ INSERT INTO est_pos (cpf, cpf_orientador) VALUES
     ("074.464.385-68", "942.703.890-01"),
     ("999.999.999-99", "769.213.426-03"),
     ("766.563.645-43", "769.213.426-03"),
-    ("770.444.741-60", "087.623.072-90")
+    ("770.444.741-60", "087.623.072-90"),
     ("880.483.410-26", "'");
 
 -- Povoamento da Tabela de Extensões
