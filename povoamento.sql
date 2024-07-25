@@ -2,8 +2,8 @@
 -- 18 registros na Tabela Pessoas
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, rua, numero, bairro, cidade, UF) VALUES
-    ('157.251.257-18', 'Ana Maria Braga', 'Feminino', '1949-04-01', 'braga.namaria@gmail.com', 'Rua das Flores', '123', 'Centro', 'São Paulo', 'SP'),
-    ('194.301.755-72', 'Supla', 'Masculino', '1966-04-02', 'supla.brasil@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
+    ("157.251.257-18", "Ana Maria Braga", "Feminino", "1949-04-01", "braga.namaria@gmail.com", "Rua das Flores", "123", "Centro", "São Paulo", "SP"),
+    ("194.301.755-72", "Supla", "Masculino", "1966-04-02", "supla.brasil@gmail.com", "Avenida do Contorno", "707", "Savassi", "Belo Horizonte", "MG"),
     ("123.456.789-00", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
     ("468.692.504-56", "Alberto Alcantara", "Masculino", "2004-11-20", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", NULL, "Campinas", "SP"),
     ("074.464.385-68", "Totoro", "Neutrois", "1988-04-16", "tonari.no.totoro@studio.ghibli.com", "Rua  Koganei", "00", NULL, "Toquio", "JP"),
@@ -19,48 +19,70 @@ INSERT INTO pessoa (cpf, nome, genero, email) VALUES
     ("048.826.172-42", "Claudio Possani", "Masculino", "claudio.possani@gmail.com"),
     ("416.236.407-92", "Percy Jackson", "Demiboy", "son-of-poseidon@halfblood.com"),
     ("831.550.514-93", "Hercule Poirot", "Masculino", "hercule.poirot@gmail.com"),
-    ("200.240.403-80", "Kujo Jotaro", "Bad Boy", "star.platinum@oraoraora.org");
+    ("200.240.403-80", "Kujo Jotaro", "Bad Boy", "star.platinum@spw.org");
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, cidade, UF) VALUES
     ("868.818.605-79", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT");
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES 
     ("537.382.259-00", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"),
-    ("622.229.395-69", "Joana Joaquina", "Feminino", "2019-01-01", "jojo@spw.org", "RJ"),
+    ("622.229.395-69", "Joana Joaquina", "Feminino", "2019-01-01", "jojobr@spw.org", "RJ"),
     ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"),
-    ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PB"),
-    ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PB"),
+    ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PE"),
+    ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PE"),
+    ("276.755.822-92", "Hugo Agaugeó", "Uraniano", "2003-10-16", "hugohugohugo@gmail.com", "PE"),
     ("942.703.890-01", "Cassandra Clare", "Feminino", "1973-09-27", "cassandra.clare@shadowhunters.com", "RJ"),
     ("460.417.549-78", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"),
-    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com");
+    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com"),    
+    ("863.501.190-29", 'Albert Einstein', 'Masculino', '1879-03-14', 'einstein@relativity.com', 'SP'),
+    ("087.623.072-90", 'Marie Curie', "Feminino", '1867-11-07', 'marie@radium.com', 'MG'),
+    ("924.728.227-66", 'Isaac Newton', "Genderqueer", '1643-01-04', 'newton@gravity.com', 'SP'),
+    ("474.013.604-03", 'Nikola Tesla', "Masculino", '1856-07-10', 'tesla@acdc.com', 'RS'),
+    ("880.483.410-26", 'Cleópatra', "Feminino", '0069-01-01', 'cleopatra@egypt.com', 'BA'),
+    ("361.060.078-02", "Pikachu", "Pikachu", "1996-04-12", "pikachu@pokemon.com", "SP"),
+    ("498.779.581-71", 'Girafales', "Masculino", '1948-12-31', 'professor.girafales@vila.com', 'BA'),
+    ("893.473.331-40", 'Chaves', "Masculino", '1950-01-01', 'chaves@vila.com', 'SP'),
+    ("222.386.412-03", 'Lara Croft', "Feminino", '1968-02-14', 'lara@tombraider.com', 'BA'),
+    ("070.486.680-32", 'Frodo Baggins', "Masculino", '1991-01-20', 'frodo@shire.com', 'SP'),
+    ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'),
+    ("535.074.559-00", "John Snow", "Masculino", "1986-12-03", "john.snow@winterfell.com", "BA"),
 
 -- Povoamento da Tabela de Telefones
 -- 12 registros na Tabela de Telefones
 
 INSERT INTO telefone (cpf_pessoa, telefone) VALUES 
-    ("157.251.257-18", "(11) 98765-4321"),
-    ("194.301.755-72", "(21) 99876-5432"),
-    ("123.456.789-00", "(21) 98765-4321"),
-    ("468.692.504-56", "(71) 98901-2345"),
-    ("074.464.385-68", "(71) 97890-1234"),
-    ("999.999.999-99", "(31) 99012-3456"),
-    ("123.456.789-00", "(31) 98901-2345"),
-    ("409.524.767-38", "(11) 98765-4321"),
-    ("868.818.605-79", "(21) 97654-3210"),
-    ("988.500.358-45", "(21) 98766-4321"),
-    ("622.229.395-69", "(21) 99876-5432"),
-    ("565.113.417-47", "(31) 98765-4321"),
-    ("769.213.426-03", "(81) 91112-4321"),
-    ("769.213.426-03", "(81) 91234-4321"),
-    ("766.563.645-43", "(81) 99912-4321");
-
+    ("157.251.257-18", "(98) 984512-7561"),
+    ("157.251.257-18", "(24) 992812-9856"),
+    ("194.301.755-72", "(93) 995829-5379"),
+    ("123.456.789-00", "(95) 984994-3219"), 
+    ("123.456.789-00", "(46) 989687-6326"),
+    ("468.692.504-56", "(65) 983048-7920"),
+    ("074.464.385-68", "(35) 987841-8011"),
+    ("999.999.999-99", "(13) 978100-6030"),
+    ("988.500.358-45", "(34) 973319-2722"),
+    ("409.524.767-38", "(13) 996014-3703"),
+    ("604.629.474-67", "(55) 984139-5272"),
+    ("048.826.172-42", "(79) 999537-3177"),
+    ("416.236.407-92", "(42) 981022-7493"),
+    ("831.550.514-93", "(49) 978690-4487"),
+    ("200.240.403-80", "(37) 996214-3933"),
+    ("868.818.605-79", "(96) 992260-5095"),
+    ("537.382.259-00", "(18) 996494-4897"),
+    ("622.229.395-69", "(62) 983519-2254"),
+    ("565.113.417-47", "(13) 991864-2694"),
+    ("769.213.426-03", "(24) 981304-2961"),
+    ("942.703.890-01", "(71) 985562-5675"),
+    ("460.417.549-78", "(62) 994986-2387"),
+    ("453.554.423-90", "(83) 985933-1002"),
+    ("276.755.822-92", "(83) 982488-7735"),
+    ("276.755.822-92", "(79) 988434-3086");
 
 -- Povoamento da Tabela de Funcionarios
 -- 6 registros na Tabela de Funcionarios
 
 INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
-    ("123.456.789-00", 30000,"2009-02-01"),
-    ("769.213.426-03", 10000,"2024-02-01"),
+    ("123.456.789-00", 30000, "2009-02-01"),
+    ("769.213.426-03", 10000, "2024-02-01"),
     ("157.251.257-18", 20000, "1990-06-01"), 
     ("565.113.417-47", 14000, "2022-02-01"),
     ("194.301.755-72", 30000, "2000-09-01"),
@@ -71,7 +93,9 @@ INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
     ("942.703.890-01", 20000, "2016-05-01"),
     ("831.550.514-93", 25000, "2010-06-01"),
     ("200.240.403-80", 15000, "2010-03-01"),
-    ("453.554.423-90", 25000, "2016-03-01");
+    ("453.554.423-90", 25000, "2016-03-01"),
+    ("924.728.227-66", 30000, "2012-12-20"),
+    ("498.779.581-71", 16000, "2016-09-27");
 
 -- Povoamento da Tabela de Professores
 -- 3 registros na Tabela de Funcionarios
@@ -89,7 +113,10 @@ INSERT INTO professor (cpf) VALUES
     ("942.703.890-01"),
     ("831.550.514-93"),
     ("200.240.403-80"),
-    ("453.554.423-90");
+    ("453.554.423-90"),
+    ("087.623.072-90"),
+    ("498.779.581-71"),
+    ("924.728.227-66");
 
 -- Povoamento da Tabela de Professores Substitutos
 -- 3 registros na Tabela de Funcionarios
@@ -121,7 +148,7 @@ INSERT INTO centro_nome (nome, cod_centro) VALUES
 INSERT INTO departamento (cod_centro, cod_dept, cpf_chefe) VALUES 
     ("CCHS", "DP", "831.550.514-93"), -- Hercule Poirot
     ("CCHS", "DF", "123.456.789-00"), -- Xerox Holmes (?)
-    ("CCNB", "DQ", "157.251.257-18"), -- Ana Maria Braga 
+    ("CCNB", "DQ", "087.623.072-90"), -- Marie Curie
     ("CCEA", "DL", "942.703.890-01"), -- Cassandra Clare
     ("CCEA", "DM", "194.301.755-72"), -- Supla
     ("CM", "DM", "048.826.172-42"), -- Claudio Possani
@@ -146,13 +173,13 @@ INSERT INTO departamento_nome (nome, cod_centro, cod_dept) VALUES
 
 INSERT INTO curso (nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES -- id_curso é automaticamente preenchido
     ("Psicologia", "123.456.789-00", 3600, "Integral", "CCHS", "DP"), -- Xerox Holmes
-    ("Gastronomia", "123.456.789-00", 3600, "Manhã", "CCNB", "DQ"), -- Xerox Holmes 
+    ("Gastronomia", "157.251.257-18", 3600, "Manhã", "CCNB", "DQ"), -- Xerox Holmes 
     ("Literatura", "123.456.789-00", 4000, "Tarde", "CCEA", "DL"), -- Xerox Holmes 
     ("Filosofia", "123.456.789-00", 3600, "Manhã", "CCHS", "DF"), -- Xerox Holmes
     ("Música", "123.456.789-00", 3200, "Tarde", "CCEA", "DM"), -- Xerox Holmes 
     ("Matemática", "123.456.789-00", 4000, "Manhã", "CM", "DM"), -- Xerox Holmes 
     ("Construção Naval", "123.456.789-00", 2800, "Tarde", "CCNB", "DEG"), -- Xerox Holmes
-    ("Educação Física", "453.554.423-90", 3600, "Tarde", "CCEA", "DEF"); -- Xerox Holmes
+    ("Educação Física", "453.554.423-90", 3600, "Tarde", "CCEA", "DEF"); -- Bernardinho
 
 -- Povoamento da Tabela de Disciplinas 
 
@@ -191,11 +218,11 @@ INSERT INTO equivalencia (cod_equivalencia, cod_equivalida) VALUES
 -- Povoamento da Tabela de Turmas
 
 INSERT INTO turma (id_turma, horario, periodo, cod_disc, cpf_professor) VALUES 
-    ("A1", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "565.113.417-47"),
-    ("A1", "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "565.113.417-47"),
-    ("A2", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
-    ("A2", "Segunda 13h-15h/Quarta 15h-17h", "2", "DL43", "565.113.417-47"),
-    ("A2", "Segunda 15h-17h/Quarta 13h-15h", "6", "DL24", "565.113.417-47"),
+    ("A1", "Terça 13h-15h/Quinta 15h-17h", "2024.1", "DL43", "565.113.417-47"),
+    ("A1", "Terça 15h-17h/Quinta 13h-15h", "2024.1", "DL24", "565.113.417-47"),
+    ("A2", "Segunda 08h-12h", "2024.1", "DQ10", "157.251.257-18"),
+    ("A2", "Segunda 13h-15h/Quarta 15h-17h", "2024.1", "DL43", "565.113.417-47"),
+    ("A2", "Segunda 15h-17h/Quarta 13h-15h", "2024.1", "DL24", "565.113.417-47"),
     ("A1", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
     ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2", "DM80", "194.301.755-72"),
     ("A9", "Segunda 13h-15h/Sexta 13h-15h", "3", "DM77", "000.000.006-01"),
@@ -212,7 +239,13 @@ INSERT INTO estudante (cpf) VALUES
     ("868.818.605-79"),
     ("766.563.645-43"),
     ("416.236.407-92"), 
-    ("460.417.549-78"); 
+    ("460.417.549-78"),
+    ("276.755.822-92"),
+    ("770.444.741-60"),
+    ("893.473.331-40"),
+    ("222.386.412-03"),
+    ("070.486.680-32"),
+    ("880.483.410-26");
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
@@ -220,14 +253,18 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
     ("409.524.767-38", 2, "2023.2"), 
     ("868.818.605-79", 3, "2023.2"),
     ("416.236.407-92", 7, "2022.1"),
-    ("460.417.549-78", 1, "2021.1");
+    ("460.417.549-78", 1, "2021.1"),
+    ("276.755.822-92", 1, "2021.1"),
+    ("893.473.331-40", 7, "2018.1"),
+    ("222.386.412-03", 2, "2020.2"),
+    ("070.486.680-32", 2, "2014.1");
 
 -- Povoamento da Tabela de Matrículas
 
 INSERT INTO matricula_turma (cpf_estudante, id_turma, cod_disc) VALUES 
     ("409.524.767-38", "A1","DL43"),
     ("868.818.605-79", "A1","DL43"),
-    ("416.236.407-92", "A0", "DM75")
+    ("416.236.407-92", "A0", "DM75");
 
 -- Povoamento da Tabela de Estudantes da Pós-Graduação
 
@@ -235,7 +272,9 @@ INSERT INTO est_pos (cpf, cpf_orientador) VALUES
     ("468.692.504-56", "604.629.474-67"),
     ("074.464.385-68", "942.703.890-01"),
     ("999.999.999-99", "769.213.426-03"),
-    ("766.563.645-43", "769.213.426-03");
+    ("766.563.645-43", "769.213.426-03"),
+    ("770.444.741-60", "087.623.072-90")
+    ("880.483.410-26", "'");
 
 -- Povoamento da Tabela de Extensões
 

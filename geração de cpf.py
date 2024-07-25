@@ -24,7 +24,7 @@ def gerar_cpf():
     """
     cpf_base = ''.join([str(random.randint(0, 9)) for _ in range(9)])
     dv = gerar_dv(cpf_base)
-    return f"{cpf_base}{dv}"
+    return f"{'.'.join([cpf_base[3*i:3*i+3] for i in range(3)])}-{dv}"
 
 def gerar_cpfs_unicos(n):
     """

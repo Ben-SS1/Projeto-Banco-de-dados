@@ -1,7 +1,4 @@
-CREATE USER 'foo@test' IDENTIFIED BY 'MAMAECAGUEI';
-CREATE ROLE ''
 CREATE DATABASE IF NOT EXISTS universidade;
-
 
 USE universidade;
 
@@ -15,10 +12,9 @@ CREATE TABLE IF NOT EXISTS pessoa (
   numero VARCHAR(5), 
   bairro VARCHAR(50), 
   cidade VARCHAR(50), 
-  UF VARCHAR(2),
+  UF VARCHAR(2), 
   PRIMARY KEY (cpf)
 );
-
 CREATE TABLE IF NOT EXISTS telefone (
   cpf_pessoa VARCHAR(14),
   telefone VARCHAR(15),
@@ -133,7 +129,7 @@ CREATE TABLE IF NOT EXISTS est_pos (
 );
 
 CREATE TABLE IF NOT EXISTS turma (
-  id_turma VARCHAR(20),
+  id_turma VARCHAR(3),
   horario VARCHAR(100),
   periodo VARCHAR(10),
   cod_disc VARCHAR(10),
@@ -145,7 +141,7 @@ CREATE TABLE IF NOT EXISTS turma (
 
 CREATE TABLE IF NOT EXISTS matricula_turma (
   cpf_estudante VARCHAR(14),
-  id_turma VARCHAR(20),
+  id_turma VARCHAR(3),
   cod_disc VARCHAR(10),
   PRIMARY KEY (cpf_estudante, id_turma, cod_disc),
   FOREIGN KEY (cpf_estudante) REFERENCES est_grad(cpf),
