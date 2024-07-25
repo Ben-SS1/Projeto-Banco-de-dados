@@ -1,24 +1,37 @@
-
-
-SELECT cpf "CPF", nome "Nome", genero "Gênero", d_nasc "D. Nascimento" FROM pessoa ORDER BY nome ASC;
-SELECT count(*) Quantidade, curso.id_curso ID, curso.nome "Nome" FROM est_grad, curso WHERE curso.id_curso=est_grad.id_curso GROUP BY curso.id_curso;
-
-SELECT funcionario.salario "Salario", pessoa.nome "Nome" FROM funcionario, pessoa  WHERE salario > 1000 AND pessoa.cpf=funcionario.cpf;
--- p_(salario, nome)(s_(salario > 1000, pessoa.cpf = funcionario.cpf)( funcionario <X> Pessoa))
-
-SELECT funcionario.salario "Sal. mais Alto", pessoa.nome "Nome" FROM funcionario, pessoa WHERE salario = (SELECT  MAX(salario) FROM funcionario) AND pessoa.cpf=funcionario.cpf;
-
+SELECT cpf, nome, genero, d_nasc FROM pessoa;
+SELECT funcionario.salario, pessoa.nome FROM funcionario, pessoa WHERE salario > 1000 AND pessoa.cpf=funcionario.cpf;
 SELECT DISTINCT d_contratacao FROM funcionario;
+SELECT P.d_nasc AS 'Data de nascimento' FROM pessoa AS P
 
-
-(SELECT * FROM professor "Professor" AS P WHERE P.nome LIKE "A%"
+(SELECT P.nome, P.d_nasc, P.rua FROM pessoa AS P WHERE P.nome LIKE "%Rolmes%"
 ) UNION (
-    SELECT * FROM prof_sub "Prof. Substituto" AS P WHERE P.nome LIKE "Whe%");
+    SELECT P.nome, P.d_nasc, P.rua FROM pessoa AS P WHERE P.nome LIKE "%Alcantara%")
 
 (SELECT P.nome, EP.cpf FROM pessoa AS P, est_pos AS EP WHERE P.cpf=EP.cpf
 ) INTERSECT (
-    SELECT P.nome, PS.cpf FROM pessoa AS P, prof_sub AS PS WHERE P.cpf=PS.cpf);
+    SELECT P.nome, PS.cpf FROM pessoa AS P, prof_sub AS PS WHERE P.cpf=PS.cpf)
 
 (SELECT P.nome, F.cpf FROM pessoa AS P, funcionario AS F WHERE P.cpf=F.cpf
 ) EXCEPT (
-    SELECT P.nome, Prof.cpf FROM pessoa AS P, professor AS Prof WHERE P.cpf=Prof.cpf);
+    SELECT P.nome, Prof.cpf FROM pessoa AS P, professor AS Prof WHERE P.cpf=Prof.cpf)
+
+
+SELECT * FROM pessoa;
+SELECT * FROM telefone;
+SELECT * FROM funcionario;
+SELECT * FROM professor;
+SELECT * FROM prof_sub;
+SELECT * FROM centro;
+SELECT * FROM centro_nome;
+SELECT * FROM departamento;
+SELECT * FROM departamento_nome;
+SELECT * FROM curso;
+SELECT * FROM disciplina;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;
+SELECT * FROM *;

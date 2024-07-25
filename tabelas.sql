@@ -1,7 +1,4 @@
-CREATE USER 'foo@test' IDENTIFIED BY 'MAMAECAGUEI';
-CREATE ROLE ''
 CREATE DATABASE IF NOT EXISTS universidade;
-
 
 USE universidade;
 
@@ -99,8 +96,11 @@ CREATE TABLE IF NOT EXISTS disciplina (
 CREATE TABLE IF NOT EXISTS disciplina_obrigatoria (
   cod_disc VARCHAR(10),
   id_curso INT,
-  PRIMARY KEY (cod_disc, id_curso),
+  cod_centro VARCHAR(10),
+  cod_dept VARCHAR(10),
+  PRIMARY KEY (cod_disc, id_curso, cod_centro, cod_dept),
   FOREIGN KEY (cod_disc) REFERENCES disciplina(cod_disc),
+  FOREIGN KEY (cod_centro,cod_dept) REFERENCES departamento(cod_centro, cod_dept),
   FOREIGN KEY (id_curso) REFERENCES curso(id_curso)
 );
 CREATE TABLE IF NOT EXISTS equivalencia (
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS est_pos (
 
 CREATE TABLE IF NOT EXISTS turma (
   id_turma VARCHAR(20),
-  horario VARCHAR(100),
+  horario VARCHAR(10),
   periodo VARCHAR(10),
   cod_disc VARCHAR(10),
   cpf_professor VARCHAR(14),
@@ -147,7 +147,7 @@ CREATE TABLE IF NOT EXISTS matricula_turma (
   cpf_estudante VARCHAR(14),
   id_turma VARCHAR(20),
   cod_disc VARCHAR(10),
-  PRIMARY KEY (cpf_estudante, id_turma, cod_disc),
+  PRIMARY KEY (cpf_estudante, id_turma),
   FOREIGN KEY (cpf_estudante) REFERENCES est_grad(cpf),
   FOREIGN KEY (id_turma,cod_disc) REFERENCES turma(id_turma,cod_disc)
 );
