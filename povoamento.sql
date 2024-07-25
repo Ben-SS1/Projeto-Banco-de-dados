@@ -177,7 +177,9 @@ INSERT INTO disciplina_obrigatoria (cod_disc, id_curso) VALUES
     ("DL24",3),
     ("DQ09", 2),
     ("DQ10", 2),
-    ("DL43", 3);
+    ("DL43", 3),
+    ("DM72", 7), 
+    ("DM75", 7);
 
 -- Povoamento da Tabela de Equivalências
 
@@ -192,11 +194,13 @@ INSERT INTO turma (id_turma, horario, periodo, cod_disc, cpf_professor) VALUES
     ("A1", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "565.113.417-47"),
     ("A1", "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "565.113.417-47"),
     ("A2", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
-    ("A2", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "565.113.417-47"),
-    ("A2", "15h-17h/Quinta 13h-15h", "6", "DL24", "565.113.417-47"),
+    ("A2", "Segunda 13h-15h/Quarta 15h-17h", "2", "DL43", "565.113.417-47"),
+    ("A2", "Segunda 15h-17h/Quarta 13h-15h", "6", "DL24", "565.113.417-47"),
     ("A1", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
     ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2", "DM80", "194.301.755-72"),
-    ("A9", "Segunda 13h-15h/Sexta 13h-15h", "3", "DM77", "000.000.006-01");
+    ("A9", "Segunda 13h-15h/Sexta 13h-15h", "3", "DM77", "000.000.006-01"),
+    ("A0", "Segunda 08h-10h/Sexta 10h-12h", "1", "DM72", "048.826.172-42"),
+    ("A0", "Segunda 10h-12h/Sexta 08h-10h", "2", "DM75", "048.826.172-42");
 
 -- Povoamento da Tabela de Estudantes
 
@@ -204,18 +208,15 @@ INSERT INTO estudante (cpf) VALUES
     ("468.692.504-56"),
     ("074.464.385-68"),
     ("999.999.999-99"),
-    ("123.456.789-00"),
     ("409.524.767-38"), 
     ("868.818.605-79"),
     ("766.563.645-43"),
-    ("416.236.407-92"),
-    ("460.417.549-78");
-
+    ("416.236.407-92"), 
+    ("460.417.549-78"); 
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
 INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES 
-    ("123.456.789-00", 1, "2020.1"),
     ("409.524.767-38", 2, "2023.2"), 
     ("868.818.605-79", 3, "2023.2"),
     ("416.236.407-92", 7, "2022.1"),
@@ -224,15 +225,15 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
 -- Povoamento da Tabela de Matrículas
 
 INSERT INTO matricula_turma (cpf_estudante, id_turma, cod_disc) VALUES 
-    ("123.456.789-00", "A1","DL43"),
     ("409.524.767-38", "A1","DL43"),
-    ("868.818.605-79", "A1","DL43");
+    ("868.818.605-79", "A1","DL43"),
+    ("416.236.407-92", "A0", "DM75")
 
 -- Povoamento da Tabela de Estudantes da Pós-Graduação
 
 INSERT INTO est_pos (cpf, cpf_orientador) VALUES 
     ("468.692.504-56", "604.629.474-67"),
-    ("074.464.385-68", "604.629.474-67"),
+    ("074.464.385-68", "942.703.890-01"),
     ("999.999.999-99", "769.213.426-03"),
     ("766.563.645-43", "769.213.426-03");
 
