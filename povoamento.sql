@@ -2,98 +2,103 @@
 -- 18 registros na Tabela Pessoas
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, rua, numero, bairro, cidade, UF) VALUES
-    ('123.456.789-00', 'Ana Maria Braga', 'Feminino', '1949-04-01', 'braga.namaria@gmail.com', 'Rua das Flores', '123', 'Centro', 'São Paulo', 'SP'),
-    ('012.345.678-99', 'Supla', 'Masculino', '1966-04-02', 'supla.brasil@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
-    ("123.456.789-12", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
-    ("455.625.420-10", "Alberto Alcantara", "Masculino", "2004-11-20", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", NULL, "Campinas", "SP"),
-    ("111.111.111-11", "Tonari no Totoro", "Neutrois", "1988-04-16", "meu.amigo.totoro@studio.ghibli.com", "Rua  Koganei", "00", NULL, "Toquio", "JP"),
+    ('157.251.257-18', 'Ana Maria Braga', 'Feminino', '1949-04-01', 'braga.namaria@gmail.com', 'Rua das Flores', '123', 'Centro', 'São Paulo', 'SP'),
+    ('194.301.755-72', 'Supla', 'Masculino', '1966-04-02', 'supla.brasil@gmail.com', 'Avenida do Contorno', '707', 'Savassi', 'Belo Horizonte', 'MG'),
+    ("123.456.789-00", "Xerox Rolmes", "Neutrois", "1846-03-11", "xerox@email.com", "Rua do Padeiro", "221b", "Oestemosteiro", "Londres", "BA"),
+    ("468.692.504-56", "Alberto Alcantara", "Masculino", "2004-11-20", "XxX_betinhogamer_XxX_minecraft_XxX@gmail.com", "Alameda das Araucárias", "123", NULL, "Campinas", "SP"),
+    ("074.464.385-68", "Totoro", "Neutrois", "1988-04-16", "tonari.no.totoro@studio.ghibli.com", "Rua  Koganei", "00", NULL, "Toquio", "JP"),
     ("999.999.999-99", 
     '寿限無 寿限無 五劫の擦り切れ 海砂利水魚の 水行末 雲来末 風来末 食う寝る処に住む処 やぶら柑子のぶら柑子 パイポパイポ パイポのシューリンガン シューリンガンのグーリンダイ グーリンダイのポンポコピーのポンポコナーの 長久命の長助', 
     "Agênero", "2002-03-11", "ponpokopinoponpokona@yahoo.com", "Rua Chōkyūmei-no Chōsuke", "220", "Afogados", "Recife", "PE");
 
 INSERT INTO pessoa (cpf, nome, genero, email) VALUES
-    ("123.456.789-13", "Deide Costa", "Feminino", "deide.costa@gmail.com"),
-    ("428.555.156-77", "Will Solace", "Masculino", "son-of-apollo@halfblood.com"),
-    ("666.123.616-42", "Victor Frankenstein", "Masculino", "doctor.frankenstein@gmail.com"),
+    ("988.500.358-45", "Cuca Beludo", "Feminino", "cuca.cabeludo@gmail.com"),
+    ("409.524.767-38", "Will Solace", "Masculino", "son-of-apollo@halfblood.com"),
+    ("604.629.474-67", "Victor Frankenstein", "Masculino", "doctor.frankenstein@gmail.com"),
     ("000.000.006-01", "Lester Papadopoulos", "Masculino", "god-of-sun@olympus.com"),
-    ("333.616.999-00", "Claudio Possani", "Masculino", "claudio.possani@gmail.com"),
-    ("492.870.908-14", "Percy Jackson", "Demiboy", "son-of-poseidon@halfblood.com");
+    ("048.826.172-42", "Claudio Possani", "Masculino", "claudio.possani@gmail.com"),
+    ("416.236.407-92", "Percy Jackson", "Demiboy", "son-of-poseidon@halfblood.com"),
+    ("831.550.514-93", "Hercule Poirot", "Masculino", "hercule.poirot@gmail.com")
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, cidade, UF) VALUES
-    ("444.444.444-44", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT");
+    ("868.818.605-79", "Nico di Angelo", "Masculino", "1932-01-28", "son-of-hades@halfblood.com", "Venice", "IT");
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES 
-    ("987.654.321-12", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"),
-    ("101.928.345-56", "Joana Joaquina", "Feminino", "1999-01-01", "jojo@gmail.com", "FL"),
-    ("242.424.242-42", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"),
-    ("735.549.312-57", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PB"),
-    ("800.254.312-57", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PB");
+    ("537.382.259-00", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"),
+    ("622.229.395-69", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"),
+    ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"),
+    ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PB"),
+    ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PB"),
+    ("942.703.890-01", "Cassandra Clare", "Feminino", "1973-09-27", "cassandra.clare@shadowhunters.com", "RJ");
 
 -- Povoamento da Tabela de Telefones
 -- 12 registros na Tabela de Telefones
 
 INSERT INTO telefone (cpf_pessoa, telefone) VALUES 
-    ("123.456.789-00", "(11) 98765-4321"),
-    ("012.345.678-99", "(21) 99876-5432"),
-    ("123.456.789-12", "(21) 98765-4321"),
-    ("455.625.420-10", "(71) 98901-2345"),
-    ("111.111.111-11", "(71) 97890-1234"),
+    ("157.251.257-18", "(11) 98765-4321"),
+    ("194.301.755-72", "(21) 99876-5432"),
+    ("123.456.789-00", "(21) 98765-4321"),
+    ("468.692.504-56", "(71) 98901-2345"),
+    ("074.464.385-68", "(71) 97890-1234"),
     ("999.999.999-99", "(31) 99012-3456"),
-    ("123.456.789-12", "(31) 98901-2345"),
-    ("428.555.156-77", "(11) 98765-4321"),
-    ("444.444.444-44", "(21) 97654-3210"),
-    ("123.456.789-13", "(21) 98766-4321"),
-    ("101.928.345-56", "(21) 99876-5432"),
-    ("242.424.242-42", "(31) 98765-4321"),
-    ("735.549.312-57", "(81) 91112-4321"),
-    ("735.549.312-57", "(81) 91234-4321"),
-    ("800.254.312-57", "(81) 99912-4321");
+    ("123.456.789-00", "(31) 98901-2345"),
+    ("409.524.767-38", "(11) 98765-4321"),
+    ("868.818.605-79", "(21) 97654-3210"),
+    ("988.500.358-45", "(21) 98766-4321"),
+    ("622.229.395-69", "(21) 99876-5432"),
+    ("565.113.417-47", "(31) 98765-4321"),
+    ("769.213.426-03", "(81) 91112-4321"),
+    ("769.213.426-03", "(81) 91234-4321"),
+    ("766.563.645-43", "(81) 99912-4321");
 
 -- Povoamento da Tabela de Funcionarios
 -- 6 registros na Tabela de Funcionarios
 
 INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
-    ("123.456.789-12", 30000,"2009-02-01"),
-    ("735.549.312-57", 6000,"2024-02-01"),
-    ("123.456.789-00", 20000, "1990-06-01"), 
-    ("242.424.242-42", 10000, "2022-02-01"),
-    ("012.345.678-99", 30000, "2000-09-01"),
-    ("987.654.321-12", 8000, "2018-03-01"),
-    ("666.123.616-42", 40000, "1960-06-01"),
+    ("123.456.789-00", 30000,"2009-02-01"),
+    ("769.213.426-03", 10000,"2024-02-01"),
+    ("157.251.257-18", 20000, "1990-06-01"), 
+    ("565.113.417-47", 14000, "2022-02-01"),
+    ("194.301.755-72", 30000, "2000-09-01"),
+    ("537.382.259-00", 12000, "2018-03-01"),
+    ("604.629.474-67", 40000, "1960-06-01"),
     ("000.000.006-01", 50000, "2023-06-21"),
-    ("333.616.999-00", 25000, "2020-02-01"),
-    ("800.254.312-57", 5000, "2019-06-01");
+    ("048.826.172-42", 25000, "2020-02-01"),
+    ("942.703.890-01", 20000, "2016-05-01"),
+    ("831.550.514-93", 25000, "2010-06-01");
 
 -- Povoamento da Tabela de Professores
 -- 3 registros na Tabela de Funcionarios
 
 INSERT INTO professor (cpf) VALUES 
-    ("123.456.789-12"),
-    ("123.456.789-00"), 
-    ("012.345.678-99"),
-    ("735.549.312-57"),
-    ("242.424.242-42"),
-    ("987.654.321-12"),
-    ("666.123.616-42"),
+    ("123.456.789-00"),
+    ("157.251.257-18"), 
+    ("194.301.755-72"),
+    ("769.213.426-03"),
+    ("565.113.417-47"),
+    ("537.382.259-00"),
+    ("604.629.474-67"),
     ("000.000.006-01"),
-    ("800.254.312-57");
+    ("048.826.172-42"), 
+    ("942.703.890-01"),
+    ("831.550.514-93");
 
 -- Povoamento da Tabela de Professores Substitutos
 -- 3 registros na Tabela de Funcionarios
 
 INSERT INTO prof_sub (cpf, d_termino) VALUES 
-    ("735.549.312-57", "2030-05-31"),
-    ("242.424.242-42", "2030-03-31"),
-    ("987.654.321-12", "2026-12-20"),
-    ("800.254.312-57", "2024-07-26");
+    ("769.213.426-03", "2030-05-31"),
+    ("565.113.417-47", "2030-03-31"),
+    ("537.382.259-00", "2026-12-20"),
+    ("766.563.645-43", "2024-07-26");
 
 -- Povoamento da Tabela de Centros
 
 INSERT INTO centro (cod_centro, cpf_diretor) VALUES 
-    ("CCHS", "123.456.789-12"),
-    ("CCNB", "123.456.789-00"), 
-    ("CM", "012.345.678-99"),
-    ("CCEA", "000.000.006-01");
+    ("CCHS", "123.456.789-00"), -- Xerox Holmes
+    ("CCNB", "157.251.257-18"), -- Ana Maria Braga
+    ("CM", "048.826.172-42"), -- Claudio Possani
+    ("CCEA", "000.000.006-01"); -- Apollo
 
 -- Povoamento da Tabela de Nomes de Centro
 
@@ -106,14 +111,14 @@ INSERT INTO centro_nome (nome, cod_centro) VALUES
 -- Povoamento da Tabela de Departamentos
 
 INSERT INTO departamento (cod_centro, cod_dept, cpf_chefe) VALUES 
-    ("CCHS", "DP", "123.456.789-12"),
-    ("CCHS", "DF", "123.456.789-12"),
-    ("CCNB", "DQ", "123.456.789-00"),
-    ("CCEA", "DL", "012.345.678-99"),
-    ("CCEA", "DM", "000.000.006-01"),
-    ("CM", "DM", "123.456.789-12"),
-    ("CCNB", "DEG", "123.456.789-12"),
-    ("CCNB", "DB", "735.549.312-57");
+    ("CCHS", "DP", "831.550.514-93"), -- Hercule Poirot
+    ("CCHS", "DF", "123.456.789-00"), -- Xerox Holmes (?)
+    ("CCNB", "DQ", "157.251.257-18"), -- Ana Maria Braga 
+    ("CCEA", "DL", "942.703.890-01"), -- Cassandra Clare
+    ("CCEA", "DM", "194.301.755-72"), -- Supla
+    ("CM", "DM", "048.826.172-42"), -- Claudio Possani
+    ("CCNB", "DEG", "123.456.789-00"), -- Xerox Holmes (?) 
+    ("CCNB", "DB", "769.213.426-03"); -- Wheydja 
 
 -- Povoamento da Tabela de Departamentos 
 
@@ -130,13 +135,13 @@ INSERT INTO departamento_nome (nome, cod_centro, cod_dept) VALUES
 -- Povoamento da Tabela de Cursos
 
 INSERT INTO curso (nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES -- id_curso é automaticamente preenchido
-    ("Psicologia", "123.456.789-12", 3600, "Integral", "CCHS", "DP"),
-    ("Gastronomia", "123.456.789-12", 3600, "Manhã", "CCNB", "DQ"),
-    ("Literatura", "123.456.789-12", 4000, "Tarde", "CCEA", "DL"),
-    ("Filosofia", "123.456.789-12", 3600, "Manhã", "CCHS", "DF"),
-    ("Música", "123.456.789-12", 3200, "Tarde", "CCEA", "DM"),
-    ("Matemática", "123.456.789-12", 4000, "Manhã", "CM", "DM"),
-    ("Construção Naval", "123.456.789-12", 2800, "Tarde", "CCNB", "DEG");
+    ("Psicologia", "123.456.789-00", 3600, "Integral", "CCHS", "DP"), -- Xerox Holmes
+    ("Gastronomia", "123.456.789-00", 3600, "Manhã", "CCNB", "DQ"), -- Xerox Holmes 
+    ("Literatura", "123.456.789-00", 4000, "Tarde", "CCEA", "DL"), -- Xerox Holmes 
+    ("Filosofia", "123.456.789-00", 3600, "Manhã", "CCHS", "DF"), -- Xerox Holmes
+    ("Música", "123.456.789-00", 3200, "Tarde", "CCEA", "DM"), -- Xerox Holmes 
+    ("Matemática", "123.456.789-00", 4000, "Manhã", "CM", "DM"), -- Xerox Holmes 
+    ("Construção Naval", "123.456.789-00", 2800, "Tarde", "CCNB", "DEG"); -- Xerox Holmes
 
 -- Povoamento da Tabela de Disciplinas 
 
@@ -173,64 +178,64 @@ INSERT INTO equivalencia (cod_equivalencia, cod_equivalida) VALUES
 -- Povoamento da Tabela de Turmas
 
 INSERT INTO turma (id_turma, horario, periodo, cod_disc, cpf_professor) VALUES 
-    ("A1", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "242.424.242-42"),
-    ("A1", "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "242.424.242-42"),
-    ("A2", "Segunda 08h-12h", "5", "DQ10", "123.456.789-00"),
-    ("A2", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "242.424.242-42"),
-    ("A2", "15h-17h/Quinta 13h-15h", "6", "DL24", "242.424.242-42"),
-    ("A1", "Segunda 08h-12h", "5", "DQ10", "123.456.789-00"),
-    ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2", "DM80", "012.345.678-99"),
+    ("A1", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "565.113.417-47"),
+    ("A1", "Terça 15h-17h/Quinta 13h-15h", "6", "DL24", "565.113.417-47"),
+    ("A2", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
+    ("A2", "Terça 13h-15h/Quinta 15h-17h", "2", "DL43", "565.113.417-47"),
+    ("A2", "15h-17h/Quinta 13h-15h", "6", "DL24", "565.113.417-47"),
+    ("A1", "Segunda 08h-12h", "5", "DQ10", "157.251.257-18"),
+    ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2", "DM80", "194.301.755-72"),
     ("A9", "Segunda 13h-15h/Sexta 13h-15h", "3", "DM77", "000.000.006-01");
 
 -- Povoamento da Tabela de Estudantes
 
 INSERT INTO estudante (cpf) VALUES 
-    ("455.625.420-10"),
-    ("111.111.111-11"),
+    ("468.692.504-56"),
+    ("074.464.385-68"),
     ("999.999.999-99"),
-    ("123.456.789-12"),
-    ("428.555.156-77"), 
-    ("444.444.444-44"),
-    ("800.254.312-57"),
-    ("492.870.908-14");
+    ("123.456.789-00"),
+    ("409.524.767-38"), 
+    ("868.818.605-79"),
+    ("766.563.645-43"),
+    ("416.236.407-92");
 
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
 INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES 
-    ("123.456.789-12", 1, "2020.1"),
-    ("428.555.156-77", 2, "2023.2"), 
-    ("444.444.444-44", 3, "2023.2"),
-    ("492.870.908-14", 7, "2022.1");
+    ("123.456.789-00", 1, "2020.1"),
+    ("409.524.767-38", 2, "2023.2"), 
+    ("868.818.605-79", 3, "2023.2"),
+    ("416.236.407-92", 7, "2022.1");
 
 -- Povoamento da Tabela de Matrículas
 
 INSERT INTO matricula_turma (cpf_estudante, id_turma, cod_disc) VALUES 
-    ("123.456.789-12", "A1","DL43"),
-    ("428.555.156-77", "A1","DL43"),
-    ("444.444.444-44", "A1","DL43");
+    ("123.456.789-00", "A1","DL43"),
+    ("409.524.767-38", "A1","DL43"),
+    ("868.818.605-79", "A1","DL43");
 
 -- Povoamento da Tabela de Estudantes da Pós-Graduação
 
 INSERT INTO est_pos (cpf, cpf_orientador) VALUES 
-    ("455.625.420-10", "666.123.616-42"),
-    ("111.111.111-11", "666.123.616-42"),
-    ("999.999.999-99", "735.549.312-57"),
-    ("800.254.312-57", "735.549.312-57");
+    ("468.692.504-56", "604.629.474-67"),
+    ("074.464.385-68", "604.629.474-67"),
+    ("999.999.999-99", "769.213.426-03"),
+    ("766.563.645-43", "769.213.426-03");
 
 -- Povoamento da Tabela de Extensões
 
 INSERT INTO extensao (cpf_estudante, cod_centro, cod_dept, tema, ch_extensao, periodo) VALUES 
-    ("428.555.156-77", "CCEA", "DM", "Música Na'vi", 100,"2023.2"),
-    ("444.444.444-44", "CCEA", "DM", "Músicas Pop", 200, "2023.1"),
-    ("492.870.908-14", "CCNB", "DEG", "Biologia Marinha", 400, "2023.1");
+    ("409.524.767-38", "CCEA", "DM", "Música Na'vi", 100,"2023.2"),
+    ("868.818.605-79", "CCEA", "DM", "Músicas Pop", 200, "2023.1"),
+    ("416.236.407-92", "CCNB", "DEG", "Biologia Marinha", 400, "2023.1");
 
 -- Povoamento da Tabela de Supervisionamentos
 
 INSERT INTO supervisiona (cpf_estudante, cod_centro, cod_dept, cpf_professor) VALUES 
-    ("428.555.156-77", "CCEA", "DM", "000.000.006-01"),
-    ("444.444.444-44", "CCEA", "DM", "000.000.006-01"),
-    ("492.870.908-14", "CCNB", "DB", "735.549.312-57");
+    ("409.524.767-38", "CCEA", "DM", "000.000.006-01"),
+    ("868.818.605-79", "CCEA", "DM", "000.000.006-01"),
+    ("416.236.407-92", "CCNB", "DB", "769.213.426-03");
 
 
 -- Povoamento da Tabea de Pré-Requisitos 
