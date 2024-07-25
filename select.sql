@@ -1,3 +1,12 @@
+--s(pessoa)
+SELECT * FROM pessoa;
+
+-- p_(cpf,nome)(pessoa)
+SELECT cpf, nome FROM pessoa;
+
+--s_(turno=tarde)(curso)
+SELECT * FROM curso WHERE turno = "Tarde";
+
 
 
 SELECT cpf "CPF", nome "Nome", genero "Gênero", d_nasc "D. Nascimento" FROM pessoa ORDER BY nome ASC;

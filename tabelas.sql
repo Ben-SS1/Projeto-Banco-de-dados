@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS curso (
 CREATE TABLE IF NOT EXISTS disciplina (
   nome VARCHAR(255),
   cod_disc VARCHAR(10),
-  c_horaria VARCHAR(10),
+  c_horaria INT DEFAULT 75,
   cod_centro VARCHAR(10),
   cod_dept VARCHAR(10),
   PRIMARY KEY(cod_disc),

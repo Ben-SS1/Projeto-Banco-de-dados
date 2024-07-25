@@ -25,7 +25,7 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, cidade, UF) VALUES
 
 INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES 
     ("537.382.259-00", "Giuseppe Camolli", "Masculino", "1979-06-16", "pikapika@pokemon.com", "FL"),
-    ("622.229.395-69", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"),
+    ("622.229.395-69", "Joana Joaquina", "Feminino", "2000-12-28", "jojo@spw.org", "RJ"),
     ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"),
     ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PB"),
     ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PB"),
