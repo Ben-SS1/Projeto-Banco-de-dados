@@ -7,15 +7,15 @@ Criar script para os procedimentos a seguir, devendo utilizar álgebra relaciona
     # selecionar todos os dados de uma tabela
     # selecionar um subconjunto de atributos de uma tabela
     # selecionar dados de uma tabela mediante alguma condição
-    realizar seleção de dados sem apresentar duplicadas
+    # realizar seleção de dados sem apresentar duplicadas
     # realizar consulta de seleção-projeção-junção
     # atribuir “apelidos”
     # aplicar união
     # aplicar interseção
     # aplicar diferença
-    aplicar produto cartesiano
-    realizar seleção sob condição que envolva outra seleção
-    consultar valores de atributos que iniciem por algum termo
+    # aplicar produto cartesiano
+    # realizar seleção sob condição que envolva outra seleção
+    # consultar valores de atributos que iniciem por algum termo
 As operações a seguir não é necessário definir a expressão de álgebra relacional correspondente:
     # ordenar resultados de consultas de forma ascendente
     # utilizar função de agregação

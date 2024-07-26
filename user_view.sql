@@ -1,4 +1,6 @@
---VIEW
+USE universidade;
+
+-- VIEW
 CREATE VIEW getDeptCentro AS SELECT 
     departamento_nome.nome Departamento,
     departamento_nome.cod_dept "Cod. Dept",

@@ -1,3 +1,5 @@
+USE universidade;
+
 -- Povoamento da Tabela Pessoas
 -- 18 registros na Tabela Pessoas
 
@@ -43,7 +45,7 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES
     ("498.779.581-71", 'Girafales', "Masculino", '1948-12-31', 'professor.girafales@vila.com', 'BA'), -- professor
     ("893.473.331-40", 'Chaves', "Masculino", '1950-01-01', 'chaves@vila.com', 'SP'), -- estudante graduação
     ("222.386.412-03", 'LaraTeX Croft', "Feminino", '1968-02-14', 'lara@tombraider.com', 'BA'), -- estudante graduação
-    ("070.486.680-32", 'Frodo Baggins', "Masculino", '1991-01-20', 'frodo@shire.com', 'SP'), -- estudante graduação
+    ("070.486.680-32", 'Maura Labingi', "Masculino", '1991-01-20', NULL, 'ME'), -- estudante graduação
     ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'); -- estudante graduação
 
 -- Povoamento da Tabela de Telefones
@@ -174,14 +176,14 @@ INSERT INTO departamento_nome (nome, cod_centro, cod_dept) VALUES
 -- Povoamento da Tabela de Cursos
 
 INSERT INTO curso (nome, cpf_coordenador, ch_curso, turno, cod_centro, cod_dept) VALUES -- id_curso é automaticamente preenchido
-    ("Psicologia", "123.456.789-00", 3600, "Integral", "CCHS", "DP"), -- Xerox Holmes
-    ("Gastronomia", "157.251.257-18", 3600, "Manhã", "CCNB", "DQ"), -- Xerox Holmes 
-    ("Literatura", "123.456.789-00", 4000, "Tarde", "CCEA", "DL"), -- Xerox Holmes 
-    ("Filosofia", "123.456.789-00", 3600, "Manhã", "CCHS", "DF"), -- Xerox Holmes
-    ("Música", "123.456.789-00", 3200, "Tarde", "CCEA", "DM"), -- Xerox Holmes 
-    ("Matemática", "123.456.789-00", 4000, "Manhã", "CM", "DM"), -- Xerox Holmes 
-    ("Construção Naval", "123.456.789-00", 2800, "Tarde", "CCNB", "DEG"), -- Xerox Holmes
-    ("Educação Física", "453.554.423-90", 3600, "Tarde", "CCEA", "DEF"); -- Bernardinho
+    ("Psicologia", "123.456.789-00", 3600, "Integral", "CCHS", "DP"),
+    ("Gastronomia", "157.251.257-18", 3600, "Manhã", "CCNB", "DQ"), 
+    ("Literatura", "942.703.890-01", 4000, "Tarde", "CCEA", "DL"), 
+    ("Filosofia", "498.779.581-71", 3600, "Manhã", "CCHS", "DF"), 
+    ("Música", "194.301.755-72", 3200, "Tarde", "CCEA", "DM"), 
+    ("Matemática", "924.728.227-66", 4000, "Manhã", "CM", "DM"), 
+    ("Construção Naval", "200.240.403-80", 2800, "Tarde", "CCNB", "DEG"), 
+    ("Educação Física", "453.554.423-90", 3600, "Tarde", "CCEA", "DEF"); 
 
 -- Povoamento da Tabela de Disciplinas 
 
@@ -198,7 +200,12 @@ INSERT INTO disciplina (nome, cod_disc, c_horaria, cod_centro, cod_dept) VALUES
     ("Cálculo I", "DM72", 90, "CM", "DM"),
     ("Cálculo II", "DM75", 90, "CM", "DM"),
     ("Cálculo Avançado", "DM90", 75, "CM", "DM"),
-    ("Canto II", "DM77", 60, "CCEA", "DM");
+    ("Canto II", "DM77", 60, "CCEA", "DM"),
+    ("Geometria Analítica", "DM30", 60, "CM", "DM"),
+    ("Álgebra Linear", "DM82", 90, "CM", "DM"),
+    ("Álgebra Linear II", "DM83", 60, "CM", "DM"),
+    ("Narrativas Não-Ficcionais", "DL40", 60, "CCEA", "DL"),
+    ("Cálculo III", "DM84", 120, "CM", "DM");
 
 -- Povoamento da Tabela de Disciplinas Obrigatórias
 
@@ -208,7 +215,12 @@ INSERT INTO disciplina_obrigatoria (cod_disc, id_curso) VALUES
     ("DQ10", 2),
     ("DL43", 3),
     ("DM72", 7), 
-    ("DM75", 7);
+    ("DM75", 7),
+    ("DM72", 6),
+    ("DM82", 6),
+    ("DM83", 6),
+    ("DM30", 6),
+    ("DL40", 3);
 
 -- Povoamento da Tabela de Equivalências
 
@@ -229,7 +241,10 @@ INSERT INTO turma (id_turma, horario, periodo, cod_disc, cpf_professor) VALUES
     ("A8", "Segunda 13h-15h/Quinta 15h-17h", "2023.2", "DM80", "194.301.755-72"),
     ("A9", "Segunda 13h-15h/Sexta 13h-15h", "2023.2", "DM77", "000.000.006-01"),
     ("A0", "Segunda 08h-10h/Sexta 10h-12h", "2023.2", "DM72", "048.826.172-42"),
-    ("A0", "Segunda 10h-12h/Sexta 08h-10h", "2023.2", "DM75", "048.826.172-42");
+    ("A0", "Segunda 10h-12h/Sexta 08h-10h", "2023.2", "DM75", "048.826.172-42"),
+    ("T1", "Segunda 08-11h", "2023.2", "DM30", "766.563.645-43"),
+    ("T2", "Quinta 08-11h", "2023.1", "DM30", "766.563.645-43"),
+    ("A0", "Terça 08h-10h/Sexta 08h-10h", "2022.1", "DM84","048.826.172-42");
 
 -- Povoamento da Tabela de Estudantes
 
@@ -248,7 +263,8 @@ INSERT INTO estudante (cpf) VALUES
     ("222.386.412-03"),
     ("070.486.680-32"),
     ("880.483.410-26"),
-    ("988.500.358-45");
+    ("988.500.358-45"),
+    ("622.229.395-69");
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
@@ -261,7 +277,8 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
     ("893.473.331-40", 7, "2018.1"),
     ("222.386.412-03", 2, "2017.1"),
     ("070.486.680-32", 2, "2014.1"),
-    ("988.500.358-45", 4, "2018.2");
+    ("988.500.358-45", 4, "2018.2"),
+    ("622.229.395-69", 6, "2022.2");
 
 
 -- Povoamento da Tabela de Matrículas
@@ -269,7 +286,8 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
 INSERT INTO matricula_turma (cpf_estudante, id_turma, cod_disc) VALUES 
     ("409.524.767-38", "A1", "DL43"),
     ("868.818.605-79", "A1", "DL43"),
-    ("416.236.407-92", "A0", "DM75");
+    ("416.236.407-92", "A0", "DM75"),
+    ("622.229.395-69", "T1", "DM30");
 
 -- Povoamento da Tabela de Estudantes da Pós-Graduação
 
@@ -300,7 +318,10 @@ INSERT INTO supervisiona (cpf_estudante, cod_centro, cod_dept, cpf_professor) VA
 INSERT INTO pre_req (cod_disc, cod_pre, id_curso) VALUES 
     ("DM75", "DM72", 6),
     ("DM90", "DM72", 6),
-    ("DM77", "DM80", 5);
+    ("DM77", "DM80", 5),
+    ("DM84", "DM83", 6),
+    ("DM83", "DM82", 6),
+    ("DM84", "DM75", 6);
 
 -- matricula de aluno novo
 START TRANSACTION;

@@ -1,19 +1,21 @@
+USE universidade;
+
 -- Selects
 
-SELECT * FROM universidade.getCPF gc;
+SELECT * FROM universidade.getDeptCentro;
 
---s(pessoa) = pessoa
+-- s(pessoa) = pessoa
 SELECT * FROM pessoa;
 
 -- p_(cpf,nome)(pessoa)
 SELECT cpf, nome FROM pessoa;
 
---s_(turno=tarde)(curso)
+-- s_(turno=tarde)(curso)
 SELECT * FROM curso WHERE turno = "Tarde";
 
---r(CPF, Nome, Gênero, D. Nascimento)(p_(cpf, nome, genero, d_nasc)(pessoa))
+-- r(CPF, Nome, Gênero, D. Nascimento)(p_(cpf, nome, genero, d_nasc)(pessoa))
 SELECT cpf "CPF", nome "Nome", genero "Gênero", d_nasc "D. Nascimento" 
-FROM pessoa ORDER BY nome ASC;
+FROM pessoa ORDER BY d_nasc ASC;
 
 SELECT count(*) Quantidade, curso.id_curso ID, curso.nome "Nome" 
 FROM est_grad, curso WHERE curso.id_curso=est_grad.id_curso GROUP BY curso.id_curso;
@@ -27,6 +29,7 @@ SELECT funcionario.salario "Sal. mais Alto", pessoa.nome "Nome"
 FROM funcionario, pessoa 
 WHERE salario = (SELECT  MAX(salario) FROM funcionario) AND pessoa.cpf=funcionario.cpf;
 
+-- p_(d_contratacao)(funcionario)
 SELECT DISTINCT d_contratacao FROM funcionario;
 
 -- p_(nome, cpf)(s_(nome LIKE "A%")(professor <J>_(professor.cpf=pessoa.cpf) pessoa)) <U> p_(nome, cpf)(s_(nome LIKE "Whe%")(pessoa))
@@ -47,3 +50,11 @@ SELECT nome, P.cpf FROM pessoa P WHERE  P.nome LIKE "Whe%"
     SELECT P.nome, S.cpf FROM pessoa AS P, prof_sub AS S WHERE P.cpf=S.cpf);
 
 SELECT * FROM getDeptCentro;
+
+
+-- p_[cpf, pessoa.nome, disciplina.nome, cod_disc](s_[cod_disc IN p_[cod_disc](s_[id_curso = E.id_curso](disciplina_obrigatoria)) AND cod_disc NOT IN p_[cod_disc](s_[cpf_estudante=E.cpf](matricula_turma))]((est_grad <J>_[est_grad.cpf=pessoa.cpf] pessoa) <X> disciplina))
+SELECT E.cpf, P.nome, D.nome, D.cod_disc FROM est_grad E
+JOIN pessoa P ON E.cpf = P.cpf
+CROSS JOIN disciplina D
+WHERE D.cod_disc IN (SELECT cod_disc FROM disciplina_obrigatoria Ob WHERE id_curso = E.id_curso)
+AND D.cod_disc NOT IN (SELECT cod_disc FROM matricula_turma M WHERE E.cpf = M.cpf_estudante);
