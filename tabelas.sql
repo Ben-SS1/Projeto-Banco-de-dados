@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS pessoa (
 );
 CREATE TABLE IF NOT EXISTS telefone (
   cpf_pessoa VARCHAR(14),
-  telefone VARCHAR(15),
+  telefone VARCHAR(17),
   PRIMARY KEY (cpf_pessoa, telefone),
   FOREIGN KEY (cpf_pessoa) REFERENCES pessoa(cpf)
 );

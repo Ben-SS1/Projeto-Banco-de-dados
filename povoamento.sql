@@ -30,10 +30,10 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES
     ("565.113.417-47", "Alice Oseman", "Feminino", "1994-10-16", "alice.oseman@gmail.com", "UK"), -- professora substituta
     ("769.213.426-03", "Whemytta Leididaiana da Silva", "Feminino", "1997-10-16", "whemyprincesa1234@gmail.com", "PE"), -- professora substituta
     ("766.563.645-43", "Wheydja Maiconjacson da Silva", "Feminino", "1997-10-16", "whey-protein@gmail.com", "PE"), -- estudante pos
-    ("276.755.822-92", "Hugo Agaugeó", "Uraniano", "2003-10-16", "hugohugohugo@gmail.com", "PE"), -- estudante graduação
+    ("276.755.822-92", "Hugo Agaugeó", "Jupariano", "2003-10-16", "hugohugohugo@gmail.com", "PE"), -- estudante graduação
     ("942.703.890-01", "Cassandra Clare", "Feminino", "1973-09-27", "cassandra.clare@shadowhunters.com", "RJ"), -- professora 
     ("460.417.549-78", "Maria Joaquina", "Feminino", "2000-12-28", "maria.joaquina@gmail.com", "RJ"), -- estudante graduação
-    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com"), -- professor
+    ("453.554.423-90", "Bernardinho", "Masculino", "1959-08-25", "bernardinho@tecnico.volei.com", "PA"), -- professor
     ("863.501.190-29", 'Albert Einstein', 'Masculino', '1879-03-14', 'einstein@relativity.com', 'SP'), -- professor
     ("087.623.072-90", 'Marie Curie', "Feminino", '1867-11-07', 'marie@radium.com', 'MG'), -- professor 
     ("924.728.227-66", 'Isaac Newton', "Genderqueer", '1643-01-04', 'newton@gravity.com', 'SP'), -- professor
@@ -94,8 +94,10 @@ INSERT INTO funcionario (cpf, salario, d_contratacao) VALUES
     ("831.550.514-93", 25000, "2010-06-01"),
     ("200.240.403-80", 15000, "2010-03-01"),
     ("453.554.423-90", 25000, "2016-03-01"),
+    ("087.623.072-90", 50000, "2001-01-01"),
     ("924.728.227-66", 30000, "2012-12-20"),
-    ("498.779.581-71", 16000, "2016-09-27");
+    ("498.779.581-71", 16000, "2016-09-27"),
+    ("766.563.645-43", 5000,"2020-07-26");
 
 -- Povoamento da Tabela de Professores
 -- 3 registros na Tabela de Funcionarios
@@ -116,7 +118,8 @@ INSERT INTO professor (cpf) VALUES
     ("453.554.423-90"),
     ("087.623.072-90"),
     ("498.779.581-71"),
-    ("924.728.227-66");
+    ("924.728.227-66"),
+    ("766.563.645-43");
 
 -- Povoamento da Tabela de Professores Substitutos
 -- 3 registros na Tabela de Funcionarios
@@ -267,8 +270,8 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
 -- Povoamento da Tabela de Matrículas
 
 INSERT INTO matricula_turma (cpf_estudante, id_turma, cod_disc) VALUES 
-    ("409.524.767-38", "A1","DL43"),
-    ("868.818.605-79", "A1","DL43"),
+    ("409.524.767-38", "A1", "DL43"),
+    ("868.818.605-79", "A1", "DL43"),
     ("416.236.407-92", "A0", "DM75");
 
 -- Povoamento da Tabela de Estudantes da Pós-Graduação
@@ -279,7 +282,7 @@ INSERT INTO est_pos (cpf, cpf_orientador) VALUES
     ("999.999.999-99", "769.213.426-03"),
     ("766.563.645-43", "769.213.426-03"),
     ("770.444.741-60", "087.623.072-90"),
-    ("880.483.410-26", "'");
+    ("880.483.410-26", "498.779.581-71");
 
 -- Povoamento da Tabela de Extensões
 
