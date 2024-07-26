@@ -44,8 +44,7 @@ INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES
     ("893.473.331-40", 'Chaves', "Masculino", '1950-01-01', 'chaves@vila.com', 'SP'), -- estudante graduação
     ("222.386.412-03", 'LaraTeX Croft', "Feminino", '1968-02-14', 'lara@tombraider.com', 'BA'), -- estudante graduação
     ("070.486.680-32", 'Frodo Baggins', "Masculino", '1991-01-20', 'frodo@shire.com', 'SP'), -- estudante graduação
-    ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'), -- estudante graduação
-    ("535.074.559-00", "Jon Snow", "Masculino", "1986-12-03", "jon.snow@winterfell.com", "BA"); -- estudante graduação
+    ("770.444.741-60", 'Mona Lisa', "Feminino", '1503-01-01', 'mona@davinci.com', 'MG'); -- estudante graduação
 
 -- Povoamento da Tabela de Telefones
 -- 12 registros na Tabela de Telefones
@@ -249,8 +248,7 @@ INSERT INTO estudante (cpf) VALUES
     ("222.386.412-03"),
     ("070.486.680-32"),
     ("880.483.410-26"),
-    ("988.500.358-45"),
-    ("535.074.559-00");
+    ("988.500.358-45");
 
 -- Povoamento da Tabela de Estudantes da Graduação
 
@@ -263,7 +261,6 @@ INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
     ("893.473.331-40", 7, "2018.1"),
     ("222.386.412-03", 2, "2017.1"),
     ("070.486.680-32", 2, "2014.1"),
-    ("535.074.559-00", 5, "2021.1"),
     ("988.500.358-45", 4, "2018.2");
 
 
@@ -304,3 +301,17 @@ INSERT INTO pre_req (cod_disc, cod_pre, id_curso) VALUES
     ("DM75", "DM72", 6),
     ("DM90", "DM72", 6),
     ("DM77", "DM80", 5);
+
+-- matricula de aluno novo
+START TRANSACTION;
+
+INSERT INTO pessoa (cpf, nome, genero, d_nasc, email, UF) VALUES
+    ("535.074.559-00", "Jon Snow", "Masculino", "1986-12-03", "jon.snow@winterfell.com", "BA");
+INSERT INTO telefone (cpf_pessoa, telefone) VALUES
+    ("535.074.559-00", "telefone");
+INSERT INTO estudante (cpf) VALUES
+    ("535.074.559-00");
+INSERT INTO est_grad (cpf, id_curso, per_entrada) VALUES
+    ("535.074.559-00", 5, "2021.1");
+
+COMMIT;

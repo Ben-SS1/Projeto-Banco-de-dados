@@ -29,7 +29,7 @@ def gerar_numeros_telefone(N):
     return list(numeros)
 
 # Exemplo de uso:
-N = 10
+N = 3
 numeros_telefone = gerar_numeros_telefone(N)
 for numero in numeros_telefone:
     print(numero)
